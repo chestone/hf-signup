@@ -1,0 +1,12 @@
+[
+    {
+        "team_id" : "test",
+        "players" : [ "test_player1", "test_player2", "test_player3" ],
+        "name" : "test"
+    },
+    {
+        "team_id" : "anotherTeam",
+        "players" : [ "test_player1", "test_player2", "test_player3" ],
+        "name" : "test_again"
+    }
+]

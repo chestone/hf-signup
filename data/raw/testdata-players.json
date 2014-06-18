@@ -1,0 +1,26 @@
+[
+    {
+        "player_id" : "test_player1",
+        "team_id" : "test",
+        "firstName" : "Max",
+        "lastName" : "Power",
+        "handle" : "MajorLaser",
+        "role" : "gamer"
+    },
+    {
+        "player_id" : "test_player2",
+        "team_id" : "test",
+        "firstName" : "Maxine",
+        "lastName" : "Potter",
+        "handle" : "MajorHater",
+        "role" : "hacker"
+    },
+    {
+        "player_id" : "test_player3",
+        "team_id" : "test",
+        "firstName" : "Maxwell",
+        "lastName" : "Bar",
+        "handle" : "Dr Doom",
+        "role" : "hacker"
+    }
+]
