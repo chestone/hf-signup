@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 // var users = require('./routes/users');
 var teams = require('./routes/teams');
+var players = require('./routes/players');
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/hackfortress');
@@ -28,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 // app.use('/users', users);
 app.use('/team', teams);
-// app.use('/player', players);
+app.use('/player', players);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -8,6 +8,10 @@ module.exports = function(grunt) {
             css: {
                 src: ['src/css/reset.css', 'src/css/main.css'],
                 dest: 'public/stylesheets/built.css'
+            },
+            js : {
+               src: ['src/js/lib/jquery.js', 'src/js/lib/backbone.js'],
+               dest: 'public/javascripts/lib.js'
             }
         },
         sass : {
