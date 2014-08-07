@@ -7,7 +7,7 @@ var timeSlotSchema = new Schema({
     teams: [String]
 }, { collection: 'timeSlots' });
 
-timeSlotSchema.methods.findAvailableTeams = function findAvailableTeams (cb) {
+timeSlotSchema.statics.findAvailableTimeSlots = function (cb) {
   return this.model('TimeSlot').find({ $where: "this.teams.length < 2" }, cb);
 };
 

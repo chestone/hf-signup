@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             css: {
-                src: ['src/css/reset.css', 'src/css/lib/bootstrap.css', 'src/css/lib/bootstrap-theme.css', 'src/css/main.css'],
+                src: ['src/css/reset.css', 'src/css/lib/bootstrap.min.css', 'src/css/lib/bootstrap-theme.css', 'src/css/main.css'],
                 dest: 'public/stylesheets/built.css'
             },
             js_lib : {

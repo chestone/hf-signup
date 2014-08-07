@@ -15,6 +15,6 @@
       </select>
     </div>
   </div>
-  <button type="submit" class="btn">Create Team</button>
+  <button type="submit" class="btn btn-lg btn-primary btn-block">Create Team</button>
 </form>
 

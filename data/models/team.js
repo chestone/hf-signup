@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var TimeSlot = require('timeSlot').TimeSlot;
 
 var teamSchema = new Schema({
     name: { type: String, required: true, index: true },

@@ -34,7 +34,7 @@ router.post('/create/', function(req, res) {
 });
 
 router.get('/create/', function(req, res) {
-  TimeSlot.find().lean().exec(function(err, slots) {
+  TimeSlot.findAvailableTimeSlots().lean().exec(function(err, slots) {
     res.locals = {
       timeSlots: slots
     };
