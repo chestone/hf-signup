@@ -4,9 +4,11 @@
     <title>{{ title }}</title>
     <link rel='stylesheet' href='/stylesheets/built.css'>
     <script src="/javascripts/lib.js"></script>
+    <script src="/javascripts/script.min.js"></script>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <div class="bodyWrap">
+      {{> part}}
+    </div>
   </body>
 </html>

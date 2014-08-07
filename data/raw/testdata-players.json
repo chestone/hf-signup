@@ -1,26 +1,17 @@
 [
     {
-        "player_id" : "test_player1",
-        "team_id" : "test",
-        "firstName" : "Max",
-        "lastName" : "Power",
-        "handle" : "MajorLaser",
+        "name" : "test_player1",
+        "teamName" : "test",
         "role" : "gamer"
     },
     {
-        "player_id" : "test_player2",
-        "team_id" : "test",
-        "firstName" : "Maxine",
-        "lastName" : "Potter",
-        "handle" : "MajorHater",
+        "name" : "test_player2",
+        "teamName" : "test",
         "role" : "hacker"
     },
     {
-        "player_id" : "test_player3",
-        "team_id" : "test",
-        "firstName" : "Maxwell",
-        "lastName" : "Bar",
-        "handle" : "Dr Doom",
+        "name" : "test_player3",
+        "teamName" : "test",
         "role" : "hacker"
     }
 ]

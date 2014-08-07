@@ -1,0 +1,36 @@
+<form id="playerForm" action="./" method="post" class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="playerName">Player Name:</label>
+    <div class="controls">
+      <input name="playerName" type="text" id="playerName" placeholder="Player Name" required>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="playerName">Player Role:</label>
+    <div class="controls">
+      <select name="playerRole" required>
+        <option value="gamer">TF2 Gamer</option>
+        <option value="hacker">Hacker</option>
+      </select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="playerName">Teams :</label>
+    <div class="controls">
+      <select name="teamName" required>
+        {{#team}}
+        <option>{{name}}</option>
+        {{/team}}
+      </select>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="playerName">Player Name:</label>
+    <div class="controls">
+      <input name="playerNumber" type="tel" id="playerNumber" placeholder="Player Phone Number">
+    </div>
+  </div>
+  <button type="submit" class="btn">Create Player</button>
+</form>
+
+

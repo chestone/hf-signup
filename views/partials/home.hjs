@@ -1,0 +1,5 @@
+      <p>Welcome to HackFortress Registration</p>
+
+      <button class="team-create"><a href="/team/create/">Create a Team</a></button>
+      <button class="player-create"><a href="/player/create/">Create a Player</a></button>
+

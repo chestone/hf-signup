@@ -1,0 +1,20 @@
+<form id="teamForm" action="./" method="post" class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="teamName">Team Name:</label>
+    <div class="controls">
+      <input name="teamName" type="text" id="teamName" placeholder="Team Name">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="teamName">Team Name:</label>
+    <div class="controls">
+      <select name="teamTime">
+        {{#timeSlots}}
+        <option>{{begin}} - {{end}}</option>
+        {{/timeSlots}}
+      </select>
+    </div>
+  </div>
+  <button type="submit" class="btn">Create Team</button>
+</form>
+

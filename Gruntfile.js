@@ -6,13 +6,17 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             css: {
-                src: ['src/css/reset.css', 'src/css/main.css'],
+                src: ['src/css/reset.css', 'src/css/lib/bootstrap.css', 'src/css/lib/bootstrap-theme.css', 'src/css/main.css'],
                 dest: 'public/stylesheets/built.css'
             },
-            js : {
-               src: ['src/js/lib/jquery.js', 'src/js/lib/backbone.js'],
+            js_lib : {
+               src: ['src/js/lib/jquery.js', 'src/js/lib/lodash.js', 'src/js/lib/backbone.js', 'src/js/lib/bootstrap.js'],
                dest: 'public/javascripts/lib.js'
-            }
+            },
+             js_app : {
+               src: ['src/js/app/*.js', '!src/js/app/script.js'],
+               dest: 'src/js/app/script.js'
+             }
         },
         sass : {
             dist: {
@@ -27,17 +31,23 @@ module.exports = function(grunt) {
                   banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
                 },
                 files: {
-                    'public/javascripts/script.min.js' : ['src/js/script.js']
+                    'public/javascripts/script.min.js' : ['src/js/app/script.js']
                 }
             }
         },
         watch : {
+          styles: {
             files: ['src/css/*.scss', 'src/css/*.css'],
             tasks: ['sass', 'concat'],
             options: {}
+          },
+          scripts: {
+            files: ['src/js/app/*.js', '!src/js/app/script.js'],
+            tasks: ['concat', 'uglify']
+          }
         },
         jshint: {
-            files: ['Gruntfile.js', 'src/js/*.js'],
+            files: ['Gruntfile.js', 'src/js/app/*.js'],
             options: {
                 globals: {
                     console: true
